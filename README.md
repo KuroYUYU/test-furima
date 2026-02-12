@@ -35,7 +35,7 @@ DB_PASSWORD=laravel_pass
 `php artisan storage:link`
 
 ## Stripe設定（決済機能を使用する場合に必要）
-最下部のURLよりstripに会員登録をしてください。
+最下部のURLよりStripに会員登録をしてください。
 
 決済機能を動作させるには、Stripeのテストキーを `.env` に設定してください。
 
