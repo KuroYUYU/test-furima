@@ -48,6 +48,11 @@ DB_PASSWORD=laravel_pass
 `STRIPE_KEY=pk_test_xxxxxxxxx`
 `STRIPE_SECRET=sk_test_xxxxxxxxx`
 
+## テスト実行方法
+`php artisan test ...`(テスト対象)を入れてコマンドを実行
+- テストケース一覧のID NO11のみUnitテストに記載
+- その他の項目はFuatureテストに記載
+
 
 ## 使用技術(実行環境)
 - PHP:8.1.33
