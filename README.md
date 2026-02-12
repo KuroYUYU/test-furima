@@ -17,6 +17,5 @@ DB_PORT=3306
 DB_DATABASE=laravel_db
 DB_USERNAME=laravel_user
 DB_PASSWORD=laravel_pass
-yaml
-コードをコピーする
+5. .envに以下の環境変数を追加
 
