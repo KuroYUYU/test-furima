@@ -19,5 +19,6 @@ DB_USERNAME=laravel_user
 DB_PASSWORD=laravel_pass
 ```
 5. アプリケーションキーの作成
+
 `docker-compose exec php bash`
 
