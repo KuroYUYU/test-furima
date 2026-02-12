@@ -2,10 +2,10 @@
 
 ## 環境構築
 ### Dockerビルド
-1. git clone git@github.com:KuroYUYU/test-mogitate.git
+1. `git clone git@github.com:KuroYUYU/test-mogitate.git`
 2. DockerDesktopアプリを立ち上げる
-3. docker-compose up -d --build
+3. `docker-compose up -d --build`
 ### Laravel環境構築
-1. docker-compose exec php bash
-2. composer install
+1. `docker-compose exec php bash`
+2. `composer install`
 3. 「.env.example」ファイルを 「.env」ファイルに命名を変更。または、`cp.env.example.env`で新しく.envファイルを作成
