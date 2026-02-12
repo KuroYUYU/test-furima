@@ -34,6 +34,19 @@ DB_PASSWORD=laravel_pass
 
 `php artisan storage:link`
 
+## Stripe設定（決済機能を使用する場合に必要）
+決済機能を動作させるには、Stripeのテストキーを `.env` に設定してください。
+
+1. Stripeのダッシュボード（テストモード）で以下を取得  
+   - 公開可能キー
+   - シークレットキー
+
+2. `.env` に設定
+
+`STRIPE_KEY=pk_test_xxxxxxxxx`
+`STRIPE_SECRET=sk_test_xxxxxxxxx`
+
+
 ## 使用技術(実行環境)
 - PHP:8.1.33
 - Laravel:8.83.29
@@ -51,7 +64,7 @@ DB_PASSWORD=laravel_pass
 - 開発環境：http://localhost/
 - phpMyAdmin:：http://localhost:8080/
 - MaiHog(メール認証用)：http://localhost:8025/
-- stripe(決済ダッシュボード)：https://stripe.com/jp
+- stripe：https://stripe.com/jp
 
 
 
