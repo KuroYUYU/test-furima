@@ -35,11 +35,8 @@ DB_PASSWORD=laravel_pass
 `php artisan storage:link`
 
 ## 使用技術(実行環境)
-・ PHP:8.1.33
-
-・ Laravel:8.83.29
-
-・ MySQL:Ver 8.0.26
-
-・ nginx:1.21.1
+- PHP:8.1.33
+- Laravel:8.83.29
+- MySQL:Ver 8.0.26
+- nginx:1.21.1
 
