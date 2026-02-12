@@ -1,5 +1,4 @@
-# アプリケーション名
-furima
+# furima
 
 # 環境構築
 ## Dockerビルド
