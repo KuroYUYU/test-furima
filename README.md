@@ -39,4 +39,20 @@ DB_PASSWORD=laravel_pass
 - Laravel:8.83.29
 - MySQL:Ver 8.0.26
 - nginx:1.21.1
+## テーブル設計
+<img width="840" height="612" alt="スクリーンショット 2026-02-13 5 57 57" src="https://github.com/user-attachments/assets/8379e275-3152-4513-877d-9145e44ee996" />
+<img width="841" height="520" alt="スクリーンショット 2026-02-13 5 58 23" src="https://github.com/user-attachments/assets/5a3864e4-6f60-4049-9693-dc8a301f6b3d" />
+<img width="839" height="296" alt="スクリーンショット 2026-02-13 5 58 41" src="https://github.com/user-attachments/assets/8b26bc57-59fe-4481-8e9b-e57fe62a007b" />
+
+## ER図
+<img width="904" height="616" alt="スクリーンショット 2026-02-13 4 38 16" src="https://github.com/user-attachments/assets/02cf73b7-1cd6-4316-b69f-e753e679cb90" />
+
+## URL
+- 開発環境：http://localhost/
+- phpMyAdmin:：http://localhost:8080/
+- MaiHog(メール認証用)：http://localhost:8025/
+- stripe(決済ダッシュボード)：https://stripe.com/jp
+
+
+
 
