@@ -20,5 +20,26 @@ DB_PASSWORD=laravel_pass
 ```
 5. アプリケーションキーの作成
 
-`docker-compose exec php bash`
+`php artisan key:generate`
+
+6. マイグレーションの実行
+
+`php artisan migrate`
+
+7. シーディングの実行
+
+`php artisan db:seed`
+
+8. シンボリックリンク作成
+
+`php artisan storage:link`
+
+## 使用技術(実行環境)
+・ PHP:8.1.33
+
+・ Laravel:8.83.29
+
+・ MySQL:Ver 8.0.26
+
+・ nginx:1.21.1
 
