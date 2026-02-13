@@ -1,0 +1,294 @@
+.detail__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 500px 1fr;
+    gap: 60px;
+}
+
+.detail__media {
+    width: 500px;
+    aspect-ratio: 1 / 1;
+    border-radius: 6px;
+    background: gray;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.detail__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.detail__meta {
+    display: flex;
+    gap: 24px;
+    margin: 10px 0 18px;
+}
+
+.detail__name {
+    padding-top: 15px;
+    margin: 0;
+}
+
+.detail__brand {
+    margin: 0;
+}
+
+.detail__meta-item,
+.detail__meta-btn {
+    display: inline-flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    margin-left: 30px;
+}
+
+.detail__meta-btn {
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.detail__icon-img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    display: block;
+}
+
+.detail__count {
+    font-size: 13px;
+}
+
+/* いいねのON/OFF切り替え */
+.detail__icon-img--on {
+    display: none;
+}
+
+.detail__meta-btn.is-liked .detail__icon-img--on {
+    display: block;
+}
+
+.detail__meta-btn.is-liked .detail__icon-img--off {
+    display: none;
+}
+
+/* 購入ボタン */
+.detail__buy-btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 4px;
+    background: red;
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+}
+
+/* 金額部分 */
+.detail__currency {
+    font-size: 18px;
+    vertical-align: baseline;
+}
+
+.detail__amount {
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.detail__tax {
+    font-size: 20px;
+    margin-left: 6px;
+}
+
+/* 商品説明から下 */
+.detail__section {
+    margin-top: 26px;
+}
+
+.detail__section-title {
+    margin: 0 0 12px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.detail__desc {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.8;
+    white-space: pre-line;
+}
+
+.detail__info-table {
+    display: grid;
+    gap: 14px;
+}
+
+.detail__info-row {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 12px;
+    align-items: start;
+}
+
+.detail__info-head {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.detail__info-body {
+    font-size: 14px;
+}
+
+.detail__condition {
+    margin-left: 12px;
+}
+
+.detail__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.detail__tag {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 12px;
+    border-radius: 9999px;
+    background: lightgray;
+    font-size: 13px;
+}
+
+/* コメント */
+.detail__section--comment .detail__section-title {
+    color: lightslategrey;
+}
+
+.detail__comments {
+    display: grid;
+    gap: 18px;
+    margin-bottom: 26px;
+}
+
+.detail__comment {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    column-gap: 14px;
+    row-gap: 7px;
+    align-items: start;
+}
+
+/* 上段：アイコン */
+.detail__comment-avatar {
+    grid-column: 1;
+    grid-row: 1;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ddd;
+}
+
+/* 上段：名前 */
+.detail__comment-name {
+    grid-column: 2;
+    grid-row: 1;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* 下段：コメント（左端から） */
+.detail__comment-text {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    margin: 0;
+    padding: 12px 14px;
+    background: #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    white-space: pre-line;
+}
+
+.detail__comment-empty {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* コメントフォーム */
+.detail__comment-form {
+    display: grid;
+    gap: 10px;
+}
+
+.detail__comment-label {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.detail__comment-textarea {
+    width: 100%;
+    border: 1px solid darkgray;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 14px;
+    outline: none;
+    resize: vertical;
+}
+
+.detail__comment-textarea {
+    min-height: 240px;
+}
+
+.detail__comment-error {
+    margin: 0;
+    font-size: 13px;
+    color: red;
+}
+
+.detail__comment-submit {
+    height: 43px;
+    border: none;
+    border-radius: 4px;
+    background:red;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+@media (min-width: 768px) and (max-width: 850px) {
+.detail__inner {
+        grid-template-columns: minmax(0, 330px) minmax(0, 1fr);
+        gap: 24px;
+    }
+
+    .detail__media {
+        width: 100%;
+        max-width: 330px;
+        margin-top: 45px;
+    }
+
+    /* いいね・コメントのアイコン列が変にズレるなら寄せる */
+    .detail__meta-item,
+    .detail__meta-btn {
+        margin-left: 20px;
+    }
+
+    .detail__meta {
+        gap: 18px;
+    }
+
+    .detail__comment-textarea {
+        min-height: 150px;
+    }
+}

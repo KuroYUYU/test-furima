@@ -1,0 +1,202 @@
+/* ヘッダープロフィール部分 */
+.mypage__profile {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.mypage__profile-row {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+
+.mypage__avatar {
+    width: 120px;
+    height: 120px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    overflow: hidden;
+    background: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 100px;
+}
+
+.mypage__avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mypage__avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    background: lightgray;
+}
+
+.mypage__username {
+    margin: 0;
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.mypage__edit {
+    margin-left: auto;
+    text-decoration: none;
+    font-weight: 700;
+    color: red;
+    border: 2px solid red;
+    padding: 10px 24px;
+    border-radius: 8px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    letter-spacing: 0.15em;
+}
+
+/* 下線は画面幅いっぱいにする */
+.mypage__tabs-bar {
+    width: 100%;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 60px;
+}
+
+/* 出品・購入タブ */
+.mypage__tabs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 35px;
+    display: flex;
+    gap: 60px;
+    font-size: 16px;
+}
+
+.mypage__tab {
+    text-decoration: none;
+    font-weight: bold;
+    color: gray;
+}
+
+.mypage__tab.is-active {
+    color: red;
+}
+
+/* 商品カードエリア */
+.products__grid {
+    max-width: 1300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 28px 50px;
+}
+
+.products__card {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.products__image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products__sold-badge {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    white-space: nowrap;
+    padding: 14px 28px;
+    border-radius: 9999px;
+    background: rgba(0, 0, 0, 0.70);
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.products__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.products__image-placeholder {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.products__name {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+/* レスポンシブデザイン */
+@media (min-width: 768px) and (max-width: 850px) {
+    .mypage__profile {
+        padding: 30px 70px;
+    }
+
+    .mypage__profile-row {
+        padding: 0 16px;
+        gap: 50px;
+    }
+
+    .mypage__avatar {
+        width: 80px;
+        height: 80px;
+        margin-left: 0;
+    }
+
+    .mypage__username {
+        font-size: 20px;
+    }
+
+    .mypage__edit {
+        padding: 8px 14px;
+        font-size: 14px;
+        border-width: 1px;
+        letter-spacing: 0.1em;
+    }
+
+    .products {
+        padding: 30px 16px;
+    }
+
+    .mypage__tabs-bar {
+        margin-bottom: 5px;
+    }
+
+    .products__grid {
+        max-width: 100%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 18px;
+    }
+
+    .products__card {
+        max-width: none;
+    }
+}

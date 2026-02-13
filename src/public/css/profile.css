@@ -1,0 +1,143 @@
+.profile {
+    width: 100%;
+    padding: 20px 20px 80px;
+    background: #fff;
+}
+
+/* タイトル */
+.profile__header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.profile__title {
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+/* カード */
+.profile__card {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* フォーム */
+.profile__form {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+/* 入力ブロック */
+.profile__group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile__label {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+/* input見た目 */
+.profile__input {
+    width: 100%;
+    height: 35px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    padding: 0 14px;
+    font-size: 16px;
+    outline: none;
+}
+
+.profile__input:focus {
+    border-color: dimgray;
+}
+
+/* エラー */
+.profile__error {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: red;
+}
+
+/* 下部アクション */
+.profile__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-top: 22px;
+}
+
+/* 更新ボタン */
+.profile__button {
+    width: 100%;
+    height: 43px;
+    border: none;
+    border-radius: 4px;
+    background: red;
+    margin-top: 40px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+}
+
+/* プロフィール画像行 */
+.profile__image-row {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+/* 左の丸 */
+.profile__avatar {
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex: 0 0 auto;
+}
+
+.profile__avatar-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.profile__avatar-placeholder {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: lightgray;
+}
+
+/* 「画像を選択する」ボタン */
+.profile__image-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    padding: 0 16px;
+    border: 1px solid tomato;
+    border-radius: 4px;
+    background: #fff;
+    color: tomato;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    user-select: none;
+}
+
+.profile__image-input {
+    display: none;
+}

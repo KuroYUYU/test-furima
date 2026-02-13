@@ -1,0 +1,235 @@
+/* 全体 */
+.sell {
+    width: 100%;
+    padding: 35px 20px 80px;
+    background: #fff;
+}
+
+/* タイトル */
+.sell__header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sell__title {
+    font-size: 27px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    margin: 0;
+}
+
+/* カード */
+.sell__card {
+    max-width: 660px;
+    margin: 0 auto;
+}
+
+
+/* セクション間 */
+.sell__section {
+    margin-bottom: 34px;
+}
+
+.sell__category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+    margin: 0 0 50px;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.sell__category-input {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.sell__category-pill {
+    display: inline-block;
+    padding: 6px 14px;
+    border: 1px solid tomato;
+    border-radius: 9999px;
+    background: #fff;
+    color: tomato;
+    font-size: 14px;
+    line-height: 1;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* 選択中の見た目 */
+.sell__category-input:checked+.sell__category-pill {
+    background: #ff4d4d;
+    color: #fff;
+}
+
+/* セクション見出し（商品の詳細 / 商品名と説明） */
+.sell__section-title {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: dimgray;
+    margin: 0 0 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid darkgray;
+}
+
+/* 商品画像：小さめラベル */
+.sell__item-label {
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin: 0 0 2px;
+    line-height: 1;
+}
+
+/* フィールド（ラベル + 入力） */
+.sell__field {
+    margin-bottom: 18px;
+}
+
+.sell__label {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    margin: 0 0 30px;
+    /* ラベルと入力の間隔はここで管理 */
+}
+
+.sell__input,
+.sell__select {
+    width: 100%;
+    height: 35px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    padding: 0 14px;
+    font-size: 16px;
+    outline: none;
+    appearance: none;
+    background: #fff;
+}
+
+.sell__input:focus,
+.sell__select:focus {
+    border-color: dimgray;
+}
+
+.sell__select-wrap {
+    position: relative;
+}
+
+/* conditionの矢印の装飾 */
+.sell__select-wrap::after {
+    content: "▼";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 12px;
+    color: gray;
+}
+
+/* textarea */
+.sell__textarea {
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    padding: 10px 14px;
+    font-size: 16px;
+    outline: none;
+    resize: none;
+}
+
+.sell__textarea:focus {
+    border-color: dimgray;
+}
+
+/* 商品画像ブロック */
+.sell__image {
+    margin-bottom: 18px;
+}
+
+.sell__image-drop {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 110px;
+    border: 1px solid darkgray;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 画像選択ボタン */
+.sell__image-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    padding: 0 14px;
+    border: 1px solid tomato;
+    border-radius: 4px;
+    background: #fff;
+    color: tomato;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* input file は隠す */
+.sell__image-input {
+    display: none;
+}
+
+/* 価格（¥を左に出す） */
+.sell__price-row {
+    position: relative;
+}
+
+.sell__price-mark {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 700;
+    pointer-events: none;
+}
+
+.sell__price-input {
+    padding-left: 34px;
+}
+
+/* エラー */
+.sell__error {
+    margin: 6px 0 0;
+    font-size: 13px;
+    color: red;
+}
+
+/* 下部ボタン */
+.sell__actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.sell__button {
+    width: 100%;
+    height: 43px;
+    border: none;
+    border-radius: 4px;
+    background: red;
+    margin-top: 18px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    cursor: pointer;
+}
