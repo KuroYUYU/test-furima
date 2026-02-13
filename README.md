@@ -46,6 +46,7 @@ DB_PASSWORD=laravel_pass
 2. `.env` に設定
 
 `STRIPE_KEY=pk_test_xxxxxxxxx`
+
 `STRIPE_SECRET=sk_test_xxxxxxxxx`
 
 ## テスト実行方法と備考
